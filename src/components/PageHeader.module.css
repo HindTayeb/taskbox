@@ -1,0 +1,50 @@
+.header {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  font-family: var(--font-family);
+}
+
+.eyebrow {
+  margin: 0;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.title {
+  margin: 0;
+  font-family: var(--font-serif);
+  font-size: 28px;
+  font-weight: 600;
+  line-height: 1.15;
+}
+
+.subtitle {
+  margin: 0;
+  font-size: 15px;
+  line-height: 1.4;
+}
+
+/* onLight */
+.onLight .eyebrow {
+  color: var(--color-primary);
+}
+.onLight .title {
+  color: var(--color-text);
+}
+.onLight .subtitle {
+  color: var(--color-text-muted);
+}
+
+/* onDark */
+.onDark .eyebrow {
+  color: rgba(255, 255, 255, 0.75);
+}
+.onDark .title {
+  color: #ffffff;
+}
+.onDark .subtitle {
+  color: rgba(255, 255, 255, 0.8);
+}

@@ -9,7 +9,9 @@ initialize();
 
 const preview: Preview = {
   parameters: {
+    layout: 'centered',
     controls: {
+      expanded: true, // show the description column — reads better in docs/demos
       matchers: {
         color: /(background|color)$/i,
         date: /Date$/,

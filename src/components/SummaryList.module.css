@@ -1,0 +1,43 @@
+.panel {
+  display: flex;
+  flex-direction: column;
+  padding: 4px 14px;
+  border-radius: 12px;
+  background-color: var(--color-surface);
+  font-family: var(--font-family);
+}
+
+.row {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 10px 0;
+}
+
+.label {
+  font-size: 13px;
+  color: var(--color-text-muted);
+}
+
+.value {
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--color-text);
+  text-align: right;
+}
+
+.emphasis {
+  border-top: 1px solid var(--color-border);
+}
+
+.emphasis .label {
+  font-size: 15px;
+  font-weight: 700;
+  color: var(--color-text);
+}
+
+.emphasis .value {
+  font-size: 17px;
+  font-weight: 800;
+}

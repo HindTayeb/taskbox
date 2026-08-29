@@ -1,0 +1,23 @@
+.tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 3px;
+  font-family: var(--font-family);
+  font-size: 13px;
+  line-height: 1;
+  color: var(--color-text);
+}
+
+.star {
+  color: var(--color-star);
+  font-size: 13px;
+}
+
+.rating {
+  font-weight: 700;
+}
+
+.count {
+  color: var(--color-text-muted);
+  font-size: 12px;
+}
