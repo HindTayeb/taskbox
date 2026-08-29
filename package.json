@@ -14,8 +14,10 @@
   "license": "MIT",
   "private": true,
   "dependencies": {
+    "@reduxjs/toolkit": "^2.12.0",
     "react": "^19.2.0",
-    "react-dom": "^19.2.0"
+    "react-dom": "^19.2.0",
+    "react-redux": "^9.3.0"
   },
   "scripts": {
     "dev": "vite",
@@ -23,7 +25,8 @@
     "preview": "vite preview",
     "storybook": "storybook dev -p 6006",
     "build-storybook": "storybook build",
-    "init-msw": "msw init public/"
+    "init-msw": "msw init public/",
+    "chromatic": "npx chromatic --project-token=chpt_eb3d129230b01dc"
   },
   "devDependencies": {
     "@chromatic-com/storybook": "^4.1.3",
@@ -37,6 +40,7 @@
     "@vitejs/plugin-react": "^5.1.1",
     "@vitest/browser-playwright": "^4.0.16",
     "@vitest/coverage-v8": "^4.0.16",
+    "chromatic": "^18.7.1",
     "eslint": "^9.39.1",
     "eslint-plugin-react-hooks": "^7.0.1",
     "eslint-plugin-react-refresh": "^0.4.24",
@@ -59,5 +63,10 @@
       "plugin:storybook/recommended"
     ]
   },
-  "packageManager": "yarn@4.12.0"
+  "packageManager": "yarn@4.12.0",
+  "msw": {
+    "workerDirectory": [
+      "public"
+    ]
+  }
 }
