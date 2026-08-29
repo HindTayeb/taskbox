@@ -1,0 +1,41 @@
+.pill {
+  display: inline-flex;
+  align-items: center;
+  padding: 4px 10px;
+  border-radius: var(--radius-full);
+  font-family: var(--font-family);
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 1.4;
+  white-space: nowrap;
+}
+
+.upcoming {
+  background-color: #e8f0fe;
+  color: #1a73e8;
+}
+
+.completed {
+  background-color: #e6f4ea;
+  color: #1e8e3e;
+}
+
+.cancelled {
+  background-color: #fce8e6;
+  color: #d93025;
+}
+
+.gold {
+  background-color: #fef7e0;
+  color: #b06000;
+}
+
+.available {
+  background-color: #f1f3f4;
+  color: #5f6368;
+}
+
+.active {
+  background-color: #1a73e8;
+  color: #ffffff;
+}
